@@ -13,6 +13,8 @@ public class ShootingController : MonoBehaviour
     public GameObject projectilePrefab = null;
     [Tooltip("The transform in the heirarchy which holds projectiles if any")]
     public Transform projectileHolder = null;
+    [Tooltip("The spawnPoint of the projectile")]
+    public GameObject spawnPoint = null;
 
     [Header("Input")]
     [Tooltip("Whether this shooting controller is controled by the player")]
@@ -145,7 +147,7 @@ public class ShootingController : MonoBehaviour
         if (projectilePrefab != null)
         {
             // Create the projectile
-            GameObject projectileGameObject = Instantiate(projectilePrefab, transform.position, transform.rotation, null);
+            GameObject projectileGameObject = Instantiate(projectilePrefab, spawnPoint.transform.position, transform.rotation, null);
 
             // Account for spread
             Vector3 rotationEulerAngles = projectileGameObject.transform.rotation.eulerAngles;

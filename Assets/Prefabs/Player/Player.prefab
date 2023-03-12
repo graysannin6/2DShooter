@@ -122,8 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcba33f7f009a424e8f7a603aaec8262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  myRigidbody: {fileID: 0}
+  animator: {fileID: 9100000, guid: 7be0c1dd8d7b6d340b8e7e502a44e152, type: 2}
+  myRigidbody: {fileID: 2258037102906410613}
   moveSpeed: 10
   rotationSpeed: 60
   aimMode: 0
